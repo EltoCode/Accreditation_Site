@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{get_url(path="id_page.css", trailing_slash=false) }}">
+
+<div class="zone_wrapper">
+  {%if page.extra.access.z1 == true %}
+  <div class="access_zone zone1">
+    1
+  </div>
+  {%endif%}
+  {%if page.extra.access.z2 == true %}
+  <div class="access_zone zone1">
+    2
+  </div>
+  {%endif%}
+  {%if page.extra.access.z3 == true %}
+  <div class="access_zone zone1">
+    3
+  </div>
+  {%endif%}
+</div>
+
+<table class="id_table">
+  <tbody>
+    <tr>
+      <td>First Name</td>
+      <td>{{page.extra.first_name}}</td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td>{{page.extra.last_name}}</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>{{page.extra.country}}</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>{{page.extra.email}}</td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td>{{page.extra.city}}</td>
+    </tr>
+    <tr>
+      <td>Street</td>
+      <td>{{page.extra.street}}</td>
+    </tr>
+    <tr>
+      <td>ZIP</td>
+      <td>{{page.extra.zip}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 class="title">
+  {{ page.title }}
+</h1>
+<p class="subtitle"><strong>{{ page.date }}</strong></p>
+{{ page.content | safe }}
+{% endblock content %}
