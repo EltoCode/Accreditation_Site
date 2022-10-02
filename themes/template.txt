@@ -1,0 +1,17 @@
++++
+title = "{$title}"
+weight = 1
+
+[extra]
+first_name = "{$fname}"
+last_name = "{$lname}"
+country = "{$ctry}"
+email = "{$email}"
+city = "{$city}"
+street = "{$street}"
+zip = "{$zip}"
+access.z1 = {$access1}
+access.z2 = {$access2}
+access.z3 = {$access3}
++++
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://example.com/</loc>
+    </url>
+    <url>
+        <loc>https://example.com/ID/</loc>
+    </url>
+    <url>
+        <loc>https://example.com/ID/07432791203cdcf13d6c3ed7fe71eaa4a5d0dda5098847bd10e7db5aeebcc553/</loc>
+    </url>
+    <url>
+        <loc>https://example.com/ID/1/</loc>
+    </url>
+    <url>
+        <loc>https://example.com/ID/1af7e132e6d77a193cfffb45bf7e77a4679c95dd6e036f95deba5e135a0aeb0e/</loc>
+    </url>
+    <url>
+        <loc>https://example.com/ID/2/</loc>
+    </url>
+    <url>
+        <loc>https://example.com/ID/5446d5217cc96a6625e736cee711fba383c8c22a489f46084c56de12d333b5ec/</loc>
+    </url>
+    <url>
+        <loc>https://example.com/ID/6b014b5cb404299b5035ffd8cc852e545f4b503f4cff1c6739a7bd59c465f614/</loc>
+    </url>
+    <url>
+        <loc>https://example.com/ID/a4b2b3a40d4732a0c04c23ba64b6c2fe8119a4ae63a236cbb4e28fe79508b65f/</loc>
+    </url>
+    <url>
+        <loc>https://example.com/ID/cc01e384ea585f2b31e3baf87add5abb16f5c4899bfa85c7417575729326877e/</loc>
+    </url>
+    <url>
+        <loc>https://example.com/ID/d916e569e6ffde9f51e14bf6906e579f6ccdfc1d362d776cb4704f27216c7629/</loc>
+    </url>
+</urlset>
