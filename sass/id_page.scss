@@ -1,8 +1,30 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: rgb(27, 102, 93);
+  background: -moz-linear-gradient(147deg, rgba(27, 102, 93, 1) 25%, rgba(19, 140, 101, 1) 45%, rgba(21, 92, 128, 1) 46%, rgba(0, 212, 255, 1) 100%);
+  background: -webkit-linear-gradient(147deg, rgba(27, 102, 93, 1) 25%, rgba(19, 140, 101, 1) 45%, rgba(21, 92, 128, 1) 46%, rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(147deg, rgba(27, 102, 93, 1) 25%, rgba(19, 140, 101, 1) 45%, rgba(21, 92, 128, 1) 46%, rgba(0, 212, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b665d", endColorstr="#00d4ff", GradientType=1);
+}
+
+.content {
+  width: 50%;
+  margin: auto;
+}
+
 .zone_wrapper {
-  display:inline-flex;
+  display: inline-flex;
   justify-content: center;
   align-content: center;
   flex-direction: row;
+  width: 100%;
+  padding: 10px;
 }
 
 .access_zone {
@@ -18,7 +40,7 @@
   height: 64px;
   width: 64px;
   border-radius: 10%;
-  display:inline-flex;
+  display: inline-flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;

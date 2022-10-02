@@ -3,6 +3,7 @@
 {% block content %}
 <link rel="stylesheet" href="{{get_url(path="id_page.css", trailing_slash=false) }}">
 
+<div class="content">
 <div class="zone_wrapper">
   {%if page.extra.access.z1 == true %}
   <div class="access_zone zone1">
@@ -54,9 +55,7 @@
   </tbody>
 </table>
 
-<h1 class="title">
-  {{ page.title }}
-</h1>
+</div>
 <p class="subtitle"><strong>{{ page.date }}</strong></p>
 {{ page.content | safe }}
 {% endblock content %}
