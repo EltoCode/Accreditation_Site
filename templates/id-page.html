@@ -3,7 +3,15 @@
 {% block content %}
 <link rel="stylesheet" href="{{get_url(path="id_page.css", trailing_slash=false) }}">
 
-<div class="content">
+<div class="heading">
+  {{page.extra.first_name}} {{page.extra.last_name}}
+</div>
+<div class="subheading">
+  {{page.extra.country}}
+</div>
+
+{# <div class="content"> #}
+<div class="zone_header"> Access Zones </div>
 <div class="zone_wrapper">
   {%if page.extra.access.z1 == true %}
   <div class="access_zone zone1">
@@ -55,7 +63,7 @@
   </tbody>
 </table>
 
-</div>
+{# </div> #}
 <p class="subtitle"><strong>{{ page.date }}</strong></p>
 {{ page.content | safe }}
 {% endblock content %}

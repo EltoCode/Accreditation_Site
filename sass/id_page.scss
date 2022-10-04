@@ -1,16 +1,68 @@
-html {
+/* body {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
-}
-body {
-  height: 100%;
-  margin: 0;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position: center; 
+  -webkit-background-size: cover;
+  background-size: cover;
   background: rgb(27, 102, 93);
   background: -moz-linear-gradient(147deg, rgba(27, 102, 93, 1) 25%, rgba(19, 140, 101, 1) 45%, rgba(21, 92, 128, 1) 46%, rgba(0, 212, 255, 1) 100%);
   background: -webkit-linear-gradient(147deg, rgba(27, 102, 93, 1) 25%, rgba(19, 140, 101, 1) 45%, rgba(21, 92, 128, 1) 46%, rgba(0, 212, 255, 1) 100%);
   background: linear-gradient(147deg, rgba(27, 102, 93, 1) 25%, rgba(19, 140, 101, 1) 45%, rgba(21, 92, 128, 1) 46%, rgba(0, 212, 255, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b665d", endColorstr="#00d4ff", GradientType=1);
+} */
+
+.heading {
+  //div
+  width: 100%;
+  background-color: #00a108;
+  overflow-x: scroll;
+
+  //text 
+  text-align: center;
+  line-height: 100%;
+  font-family: "Arial Black", Gadget, sans-serif;
+  //font-size: calc(100% + 25.5vmax);
+  font-size: 500%;
+  letter-spacing: 1px;
+  word-spacing: 0px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+  $text-outline-color: #002a3e;
+  text-shadow: $text-outline-color 6px 0px 0px, $text-outline-color 5.91686px 0.995377px 0px, $text-outline-color 5.66974px 1.96317px 0px, $text-outline-color 5.2655px 2.87655px 0px, $text-outline-color 4.71532px 3.71022px 0px, $text-outline-color 4.03447px 4.44106px 0px, $text-outline-color 3.24181px 5.04883px 0px, $text-outline-color 2.35931px 5.51667px 0px, $text-outline-color 1.41143px 5.83163px 0px, $text-outline-color 0.424423px 5.98497px 0px, $text-outline-color -0.574341px 5.97245px 0px, $text-outline-color -1.55719px 5.79441px 0px, $text-outline-color -2.49688px 5.45578px 0px, $text-outline-color -3.36738px 4.96596px 0px, $text-outline-color -4.14455px 4.33852px 0px, $text-outline-color -4.80686px 3.59083px 0px, $text-outline-color -5.33596px 2.74364px 0px, $text-outline-color -5.71718px 1.8204px 0px, $text-outline-color -5.93995px 0.84672px 0px, $text-outline-color -5.99811px -0.150428px 0px, $text-outline-color -5.89004px -1.14341px 0px, $text-outline-color -5.61874px -2.1047px 0px, $text-outline-color -5.19172px -3.00766px 0px, $text-outline-color -4.62082px -3.82727px 0px, $text-outline-color -3.92186px -4.54081px 0px, $text-outline-color -3.11421px -5.12852px 0px, $text-outline-color -2.22026px -5.57409px 0px, $text-outline-color -1.26477px -5.86518px 0px, $text-outline-color -0.274238px -5.99373px 0px, $text-outline-color 0.723898px -5.95617px 0px, $text-outline-color 1.70197px -5.75355px 0px, $text-outline-color 2.63288px -5.39147px 0px, $text-outline-color 3.49082px -4.87998px 0px, $text-outline-color 4.25202px -4.23324px 0px, $text-outline-color 4.89538px -3.46919px 0px, $text-outline-color 5.40307px -2.60899px 0px, $text-outline-color 5.76102px -1.67649px 0px, $text-outline-color 5.95932px -0.697531px 0px;
+}
+
+@media (max-width: 800px) {
+  .heading {
+    text-align: left;
+    font-size: 25.5vw;
+  }
+}
+
+.subheading {
+  width: 100%;
+  background: #4e97ff;
+
+  //text
+  text-align: center;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #FFFFFF;
+  font-weight: 1000;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
 }
 
 .content {
@@ -18,13 +70,43 @@ body {
   margin: auto;
 }
 
+.zone_header {
+  //div
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  width: 75%;
+  background: #555555;
+  margin-left: 12.5%;
+  margin-top: 1%;
+
+  //text
+  font-family: Georgia, serif;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: underline solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+}
+
 .zone_wrapper {
   display: inline-flex;
   justify-content: center;
   align-content: center;
   flex-direction: row;
-  width: 100%;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-top: 0;
   padding: 10px;
+  border: 4px solid #555555;
+  background: rgba($color: #63757F, $alpha: 0.25);
+  flex-wrap: wrap;
 }
 
 .access_zone {
@@ -39,6 +121,7 @@ body {
   text-align: center;
   height: 64px;
   width: 64px;
+  min-width: 64px;
   border-radius: 10%;
   display: inline-flex;
   justify-content: center;

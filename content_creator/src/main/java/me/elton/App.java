@@ -9,6 +9,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Row.MissingCellPolicy;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -54,7 +55,7 @@ public final class App {
             int maxRowNum = sheet.getLastRowNum();             
             
             for (Row row : sheet) {
-                if (row.getRowNum() == 0) {
+                if (row.getZeroHeight() || row.getRowNum() == 0) {
                     continue; }
 
                 email = getCString(row, 1);
@@ -65,7 +66,7 @@ public final class App {
                 city = getCString(row, 6);
                 ctry = getCString(row, 7);
 
-                System.out.println("Doing "+fname);
+                System.out.println("Doing "+row.getCell(2) + " " + row.getCell(3));
 
                 title = getSHA(fname, lname, email);
 
